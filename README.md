@@ -39,7 +39,7 @@ Create the domain controller VM (Windows Server 2022) named "DC-1.  Take note of
 
 <p>
 
-![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/e0413973-5bf8-431b-9427-a37d7b0719f7)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/40e254f6-fee0-459d-b47e-3dfa0afcfeeb)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/83422a50-98b6-4c52-a69d-a0be900ba712)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/ef735813-c878-427b-a010-9c562f36c6ad)
+![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/e0413973-5bf8-431b-9427-a37d7b0719f7)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/40e254f6-fee0-459d-b47e-3dfa0afcfeeb)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/83422a50-98b6-4c52-a69d-a0be900ba712)
 
 
 <h2>Ensure Connectivity between the client and Domain Controller</h2>
@@ -96,6 +96,24 @@ From the Azure Portal we need to set Client-1 DNS setting to the Domain Controll
 <p>
 <br />
 
-![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/d63d2957-8ba1-4ebb-a2a7-bdf4d1abf85e)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/406a86f4-f84f-4967-b9fc-46bfb8f3799d)
+![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/0e6d0fb6-6b42-49cb-85e3-dfff1d2f5bdb)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/84ec058d-4cbd-4a32-a471-9c5dd23b2af8)
+
+
+
+
+<p>
+
+<h2> Setup Remote Desktop for non-administrative user on Client-1</h2>
+
+go back into CLient-1 as your domain name and user (mydomain.com\user_admin) and open system properties -> Remote Desktop -> Select user's to access this PC -> Add "domain users" check names and press Ok.  Now all domain user will be able to access Client-1 though remote desktop.  
+</p>
+<p>
+
+![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/2a272087-4cf4-4210-894a-161ccd480dd7)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/201e7a14-0d31-497a-8ba6-b6e2b083b89c)
+
+<p>
+
+
+
 
 
