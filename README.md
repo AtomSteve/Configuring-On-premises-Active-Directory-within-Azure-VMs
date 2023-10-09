@@ -73,8 +73,20 @@ Go ahead and log back into DC-1 if you havn't, go to Server Manager -> Add roles
 
 <p>
 
+<h2>Create an Admin and Normal User Account in AD</h2>
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+To creat an Administrator user clikc on tool -> click on Activ Directory User and Computers -> left click mydomain -> new -> Organizational unit.  name the group _EMPLOYEE's and _Admins or whatever you want to call it.  Now under Admins folder right click and create a user and create a password for them and hit create.  After the user is created right click -> properties -> Member of -> Add to domain admins group.  Now log out of DC-1 and log back in with the user's name and password.  mydomain.com/username :Password.  Now the User credentials will allow you to sighn in to the Domain users account.
+  
 </p>
 <br />
+
+![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/3a4db73f-a878-4ffe-b123-e8f71b7ebfa3)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/f3e9b60c-8898-49de-9539-bef70fcc0789)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/ce7db753-163b-4c0e-930e-1248e10e7ca3)
+
+
+
+
+
+<p>
+
