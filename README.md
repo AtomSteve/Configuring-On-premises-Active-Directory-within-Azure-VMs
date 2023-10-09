@@ -57,15 +57,22 @@ Login to Client-1 VM with remote desktop and ping the private ip address with pi
 
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<h2>Install Active Directory</h2>
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Go ahead and log back into DC-1 if you havn't, go to Server Manager -> Add roles and features -> keep clicking Next until you reach Server Roles and click on Active Directory Domain Services -> hit next and Install.  Next click on the Flag and go to "Promote this Server to a domain controller" -> Add a new forest -> create a root domain name.  Example :mydomain.com -> keep clcking next and Install.  It will sign you out so go ahead and sign back in with the domain.  example: mydomain.com/username
 </p>
 <br />
 
+![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/a6049555-e279-4174-8947-e3cd9805493e)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/8c5b5fda-f6e2-4919-bcbe-4332f2b6badc)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/c5307498-5b5b-40ae-801f-2fc00a7c4a2c)
+
+
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
