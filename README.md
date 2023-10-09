@@ -113,7 +113,18 @@ go back into CLient-1 as your domain name and user (mydomain.com\user_admin) and
 
 <p>
 
+<h2>Create a bunch of additional users and attempt to log into client with one of the users</h2>
 
+Log back into DC-1 under the user admin.  Open up Powershell_ise as administrator, and past in the following code.  Run the script and watch as it creates users.  When finished, open Active Directory user and Computers and check the group _EMPLOYEES.  Now we can log into Client-1 with one of the created accounts
+
+</p>
+<p>
+
+![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/f52c1eee-4e3d-48e7-a86a-cac265d48a2a)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/61aba18a-1c59-4784-bfb6-a065b4c33f12)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/b450a5c1-5c4a-42d1-acef-68e50bf34e37)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/739261fd-73c5-42d9-9102-2447857d27ce)
+
+<p>
+  
+<h2>FINISHED!!!!</h2>
 
 
 
