@@ -42,14 +42,19 @@ Create the domain controller VM (Windows Server 2022) named "DC-1.  Take note of
 ![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/e0413973-5bf8-431b-9427-a37d7b0719f7)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/40e254f6-fee0-459d-b47e-3dfa0afcfeeb)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/83422a50-98b6-4c52-a69d-a0be900ba712)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/ef735813-c878-427b-a010-9c562f36c6ad)
 
 
-
-
+<h2>Ensure Connectivity between the client and Domain Controller</h2>
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Login to Client-1 VM with remote desktop and ping the private ip address with ping -t <ip address>.  It shouldnt be able to connect to DC-1 yet.  Login to the DC-1 VM and enable ICMPv4.  Click start -> search Windows Defender Firewall with Advanced Security -> Inbound rules -> Enable both ICMPv4.  Then Check back in with Client-1 and see the changes, its should be pinging the ip address now.  
+  
 </p>
 <br />
+
+![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/c808fde4-922e-4e33-ba03-d3900508e1d5)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/16f9e8cd-1c4e-44ea-b44c-83424e1c8151)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/4f1b0bd5-b84a-4f3a-9e53-0fad6e86b907)
+
+
+
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
