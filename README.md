@@ -84,9 +84,18 @@ To creat an Administrator user clikc on tool -> click on Activ Directory User an
 
 ![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/3a4db73f-a878-4ffe-b123-e8f71b7ebfa3)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/f3e9b60c-8898-49de-9539-bef70fcc0789)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/ce7db753-163b-4c0e-930e-1248e10e7ca3)
 
+<p>
 
+<h2>Join Client-1 to your domain</h2>
 
+</p>
+<p>
+From the Azure Portal we need to set Client-1 DNS setting to the Domain Controller's Private ip address.  Go back to the azure portal and get DC-1's private ip address.  Then go to client-1 VM in azure.  CL-1 -> networking -> click on NIC -> DNS Servers -> click on custom and input DC-1's private ip address.  Now in Client-1 VM go to system -> Rename this PC then rename it to the domain name, Example (mydomain.com).  Then it will ask for permisson from the Admin, which is the one that you created.  After Client-1 VM will restart.  Now the user admin that we created will be able to log in to client-1 because it is now in the domain.  
 
 
 <p>
+<br />
+
+![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/d63d2957-8ba1-4ebb-a2a7-bdf4d1abf85e)![image](https://github.com/AtomSteve/Configuring-On-premises-Active-Directory-within-Azure-VMs/assets/147112183/406a86f4-f84f-4967-b9fc-46bfb8f3799d)
+
 
